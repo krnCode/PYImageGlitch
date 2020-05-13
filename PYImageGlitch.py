@@ -10,13 +10,13 @@ glitcher = ImageGlitcher()
 
 # 2 - Defining the paths to get the images and output the glitched images
 # 2.1 - Path of raw images
-rawDir = r'C:\Users\conta\Desktop\source'
+rawDir = r'C:\Users\conta\Pictures\Wallpapers'
 # 2.2 - Path of glitched images (output)
-modDir = r'C:\Users\conta\Desktop\output'
+modDir = r'C:\Users\conta\Pictures\WallsConverted'
 
 # 3 - Making sure that the output folder exists
 if os.path.exists(modDir) == False:
-    os.makedirs(r'C:\Users\conta\Desktop\output')
+    os.makedirs(r'C:\Users\conta\Pictures\WallsConverted')
 
 # 4 - Glitch the images of the desired folder
 for rawImage in os.listdir(rawDir):
